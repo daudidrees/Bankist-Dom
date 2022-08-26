@@ -1,0 +1,119 @@
+// document.querySelectorAll('.nav__link').forEach(function (el) {
+//   el.addEventListener('click', function (e) {
+//     e.preventDefault();
+//     const id = this.getAttribute('href');
+//     document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
+//   })
+// });
+
+// tabs.forEach(tab => {
+//   tab.addEventListener('click', function () {
+//     console.log("TAB");
+//   })
+// });
+
+
+
+// const message = document.createElement('div');
+// const header = document.querySelector('.header')
+// message.classList.add('cookie-message');
+// message.innerHTML = 'We use cookies for improved functionality and analytics <button class="btn btn-close--cookies">Got it!</button>'
+// header.append(message);
+
+// document.querySelector('.btn-close--cookies').addEventListener('click', function () {
+//   message.remove();
+// });
+
+// message.style.backgroundColor = '#37383d';
+// message.style.height = Number.parseFloat(getComputedStyle(message).height) + 30 + 'px'
+// console.log(getComputedStyle(message).height);
+
+// const logo = document.querySelector('.nav__logo');
+// console.log(logo.getAttribute('id'));
+// console.log(logo.src);
+// console.log(logo.alt);
+// console.log(logo.getAttribute('class'));
+// console.log(logo.getAttribute('src'));
+// console.log(logo.className);
+// console.log(logo.id);
+
+// const randomeInt = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
+// const randomColor = () => `rgb(${randomeInt(0, 255)}, ${randomeInt(0, 255)}, ${randomeInt(0, 255)})`;
+
+// document.querySelector('.nav__link').addEventListener('click', function (e) {
+//   e.preventDefault();
+//   this.style.backgroundColor = randomColor(0, 255);
+// });
+
+// document.querySelector('.nav__links').addEventListener('click', function (e) {
+//   e.preventDefault();
+//   this.style.backgroundColor = randomColor(0, 255);
+// });
+
+// document.querySelector('.nav').addEventListener('click', function (e) {
+//   e.preventDefault();
+//   this.style.backgroundColor = randomColor(0, 255);
+// });
+
+// const obsCallback = function (entries) {
+//   entries.forEach(el => console.log(el));
+// }
+
+// const obsOption = {
+//   root: null,
+//   threshold: 0.1,
+// }
+
+// const observer = new IntersectionObserver(obsCallback, obsOption);
+// observer.observe(section1);
+
+// btnLeft.addEventListener('click', function () {
+//   curLeft--;
+//   slides.forEach((el, i) => {
+//     el.style.transform = `translateX(${100 * (i - curLeft)}%)`;
+//   });
+// });
+
+// slides.forEach((el, i) => {
+//   el.style.transform = `translateX(${100 * i}%)`;
+// });
+
+
+// const goToSlide = function (slide) {
+//   slides.forEach((el, i) => {
+//     el.style.transform = `translateX(${100 * (i - slide)}%)`;
+//   });
+// };
+
+// goToSlide(0);
+
+// const nextSlide = function () {
+//   if (currSlide === maxSlide) {
+//     currSlide = 0
+//   } else {
+//     currSlide++;
+//   }
+//   goToSlide(currSlide);
+// }
+
+// const prevSlide = function () {
+//   if (currSlide === 0) {
+//     currSlide = maxSlide;
+//   } else {
+//     currSlide--;
+//   }
+//   goToSlide(currSlide);
+// }
+
+// btnRight.addEventListener('click', nextSlide);
+// btnLeft.addEventListener('click', prevSlide);
+// document.addEventListener('keydown', function (e) {
+//   e.key === 'ArrowLeft' && prevSlide();
+//   e.key === 'ArrowRight' && nextSlide();
+// });
+
+
+// window.addEventListener('beforeunload', function (e) {
+//   e.preventDefault();
+//   e.returnValue = ''
+// });
